@@ -56,20 +56,26 @@
   }
   
   .pfp{
-    display: inline-block;
+   
     border-radius: 50%;
     margin-top: 1%;
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 5 0px;
     margin-right: 80px;
     margin-top: 1px;
     margin-left: 40px;
     box-shadow: 0px 5px 15px black;
+    display: flex; align-items: center;
+    justify-content: center;
+    cursor: pointer; font-weight: 500;
+    border-radius: 99px;
+    transition: color 0.15s ease-in;
   }
 
 .dropdown {
     position: relative;
     display: inline-block;
+    transition: color 0.15s ease-in;
 }
 
 .dropdown-content {
@@ -77,6 +83,7 @@
     display: none;
     position: absolute;
     background-color: #f9f9f9;
+    border-radius: 5px;
     min-width: 160px;
     box-shadow: 0px 8px 16px 
         0px rgba(0, 0, 0, 0.2);
@@ -85,17 +92,20 @@
 
 .dropdown-content a {
     color: black;
+    
     padding: 12px 16px;
     text-decoration: none;
     display: block;
 }
 
 .dropdown-content a:hover {
-    background-color: #2e2b2b
+    background-color: #2e2b2b;
+    border-radius: 5px;
 }
 
 .dropdown:hover .dropdown-content {
     display: block;
+    transition: color 0.15s ease-in;
 }
 
 .dropdown:hover .dropbtn {
@@ -108,12 +118,16 @@
   background-color: #f3f7f7;
   border-radius: 5px;
   color: #404040;
-  padding: 2px 70px;
+  padding: 2px 20px;
   width: fit-content;
   height: fit-content;
+  padding: 5px;
+  padding-left: 10%;
+  padding-right: 10%;
   font-weight: 600;
   font-size: 15 px;
   box-shadow: 0px 5px 15px black;
+  
   
 }
 .light-mode {
@@ -155,6 +169,7 @@ main {
   display: inline-block;
   width: 60px;
   height: 34px;
+  
 }
 
 .switch input { 
@@ -258,5 +273,9 @@ input:checked + .slider:before {
   .col-s-11 {width: 91.66%;}
   .col-s-12 {width: 100%;}
 
- 
-   
+/*ignore grid/ 
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+.span-col-2{grid-column: span 2 / auto;} 
