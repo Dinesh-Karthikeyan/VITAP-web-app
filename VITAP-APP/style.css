@@ -27,9 +27,10 @@
     align-items: center;
     justify-content: space-between;
     background: #424242;
-    box-shadow: 0 3px 5px black;
-    right: 1;
-    left: 1;
+    box-shadow: 0px 5px 15px black;
+    margin-right: 0%;
+    margin-left: 0%;
+    height: 7%;
   }
   nav ul li {
     display: block;
@@ -46,24 +47,24 @@
   nav ul li a:hover {
     color: rgb(199, 34, 34);
   }
- 
-  .logo{
-      height: 100px;
+
+  
+ .logo{
+      height: 90px;
       width: 200px;
-    
-      
+    padding:5%;
   }
   
   .pfp{
     display: inline-block;
     border-radius: 50%;
-    margin: 10px;
-    height: 8 0px;
-    width: 85px;
+    margin-top: 1%;
+    height: 50px;
+    width: 50px;
     margin-right: 80px;
-    margin-top: -5px;
+    margin-top: 1px;
     margin-left: 40px;
-    box-shadow: 0 3px 8px black;
+    box-shadow: 0px 5px 15px black;
   }
 
 .dropdown {
@@ -72,6 +73,7 @@
 }
 
 .dropdown-content {
+
     display: none;
     position: absolute;
     background-color: #f9f9f9;
@@ -101,18 +103,17 @@
 }
 
 .email{
-  position: absolute;
-  display: inline-block;
-  background-color: #f3f7f7;
-  border-radius: 5px;
-  display: inline-block;
+  
+  display: block;
   background-color: #f3f7f7;
   border-radius: 5px;
   color: #404040;
-  bottom: 58px;
-  right: 183px; 
-  padding-right: 20px;
-  box-shadow: 0 3px 8px black;
+  padding: 2px 70px;
+  width: fit-content;
+  height: fit-content;
+  font-weight: 600;
+  font-size: 15 px;
+  box-shadow: 0px 5px 15px black;
   
 }
 .light-mode {
@@ -128,19 +129,6 @@
   --fontColor: var(--black);
 }
 
-.button{
- 
-  background-color: black;
-  border-radius: 50%;
-  color: white;
-  padding: 12px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  cursor: pointer;
-
-}
 * {
   transition: background-color 0.6s ease, color 1s ease;
 }
@@ -182,6 +170,7 @@ main {
   left: 0;
   right: 0;
   bottom: 0;
+
   background-color: #ccc;
   -webkit-transition: .4s;
   transition: .4s;
@@ -214,10 +203,60 @@ input:checked + .slider:before {
 }
 .slider.round {
   border-radius: 34px;
-  box-shadow: 0 3px 8px black;
+  box-shadow: 0px 5px 15px black;
 }
 
 .slider.round:before {
   border-radius: 50%;
-  box-shadow: 0 3px 8px black;
+  box-shadow: 0px 5px 15px black;
 }
+* {
+  box-sizing: border-box;
+}
+@media (max-width: 1000px) {
+  .email{
+    display: none;
+    }
+}
+
+/*subject to change/use if needed*/
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: right;
+  padding: 15px;
+}
+
+.col-1 {width: 8.33%; }
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+
+ 
+   
