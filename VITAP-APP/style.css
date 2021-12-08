@@ -253,13 +253,12 @@ input:checked + .slider:before {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: -350px 0px 0px 0px;
+  margin: -500px 0px 0px 0px;
 
 }
 #button{
-  margin: 0px 60px 40px 60px;
+  margin: 20px 60px 40px 60px;
   width: 65%;
-  float: left;
 }
 .normal{
   background-color: #D9414C;
@@ -346,6 +345,8 @@ div a p{
   }
   #news{
     width: 100%;
+    border-bottom: 1px solid rgb(112, 112, 112);
+    border-left: none;
   }
   #newsbox{
     flex-direction: row;
